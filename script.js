@@ -62,6 +62,12 @@ const songs = [
     image: "img/tatiana-2.jpg",
     audio: "music/beauty-sings.mp3",
   },
+  {
+    name: "Like you",
+    artist: "Tatiana Manaois",
+    image: "img/like-you.jpg",
+    audio: "music/like-you.mp3",
+  },
 ];
 
 // Check if song is playing
