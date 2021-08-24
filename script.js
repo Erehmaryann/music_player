@@ -11,3 +11,8 @@ const playSong = () => {
 };
 
 // Pause
+const pauseSong = () => {
+  sound.pause();
+  playBtn.classList.replace("fa-pause", "fa-play");
+  playBtn.setAttribute("title", "Play");
+};
