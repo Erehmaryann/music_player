@@ -32,6 +32,12 @@ const songs = [
     image: "img/galway.png",
     audio: "music/galway.mp3",
   },
+  {
+    name: "Electric Chill Machine",
+    artist: "Jacinto",
+    image: "img/ryanne-1.jpg",
+    audio: "music/ryanne-1.mp3",
+  },
 ];
 
 // Check if song is playing
