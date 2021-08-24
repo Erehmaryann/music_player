@@ -92,6 +92,9 @@ const pauseSong = () => {
 // Play or Pause Event Listener
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
 
+// Current Song
+let songIndex = 0;
+
 // Update DOM
 const loadSong = (song) => {
   title.textContent = song.name;
@@ -101,7 +104,7 @@ const loadSong = (song) => {
 };
 
 // On load -Select First Song
-loadSong(songs[9]);
+loadSong(songs[songIndex]);
 
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
