@@ -38,6 +38,30 @@ const songs = [
     image: "img/ryanne-1.jpg",
     audio: "music/ryanne-1.mp3",
   },
+  {
+    name: "Seven Nation Army (Remix)",
+    artist: "Jacinto",
+    image: "img/ryanne-2.jpg",
+    audio: "music/ryanne-2.mp3",
+  },
+  {
+    name: "Goodnight,Disco Queen",
+    artist: "Jacinto",
+    image: "img/ryanne-3.jpg",
+    audio: "music/ryanne-3.mp3",
+  },
+  {
+    name: "Front Row(Remix)",
+    artist: "Metric/Jacinto",
+    image: "img/metric-1.jpg",
+    audio: "music/metric-1.mp3",
+  },
+  {
+    name: "Beauty Sings",
+    artist: "Tatiana Manaois",
+    image: "img/tatiana-2.jpg",
+    audio: "music/beauty-sings.mp3",
+  },
 ];
 
 // Check if song is playing
