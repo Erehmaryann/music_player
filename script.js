@@ -21,3 +21,6 @@ const pauseSong = () => {
   playBtn.classList.replace("fa-pause", "fa-play");
   playBtn.setAttribute("title", "Play");
 };
+
+// Play or Pause Event Listener
+playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
