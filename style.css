@@ -20,6 +20,7 @@ body {
 .player-container {
   height: 500px;
   width: 400px;
+  background: #e7e7e7;
 }
 
 .img-container {
