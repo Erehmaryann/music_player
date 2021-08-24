@@ -99,3 +99,6 @@ const loadSong = (song) => {
   image.setAttribute("src", song.image);
   sound.setAttribute("src", song.audio);
 };
+
+// On load -Select First Song
+loadSong(songs[0]);
