@@ -105,3 +105,4 @@ loadSong(songs[9]);
 
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
+nextBtn.addEventListener("click", nextSong);
