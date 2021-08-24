@@ -91,3 +91,11 @@ const pauseSong = () => {
 
 // Play or Pause Event Listener
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
+
+// Update DOM
+const loadSong = (song) => {
+  title.textContent = song.name;
+  artist.textContent = song.artist;
+  image.setAttribute("src", song.image);
+  sound.setAttribute("src", song.audio);
+};
