@@ -27,6 +27,7 @@ body {
 
 .img-container {
   height: 300px;
+  width: 300px;
   object-fit: cover;
   position: relative;
   top: -50px;
