@@ -1,5 +1,6 @@
 const image = document.querySelector("img");
 const title = document.querySelector("#title");
+const artist = document.querySelector("#artist");
 const sound = document.querySelector("audio");
 const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
