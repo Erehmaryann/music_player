@@ -101,4 +101,7 @@ const loadSong = (song) => {
 };
 
 // On load -Select First Song
-loadSong(songs[0]);
+loadSong(songs[9]);
+
+// Event Listeners
+prevBtn.addEventListener("click", prevSong);
