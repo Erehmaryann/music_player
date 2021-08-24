@@ -21,6 +21,7 @@ body {
   height: 500px;
   width: 400px;
   background: #e7e7e7;
+  border-radius: 20px;
 }
 
 .img-container {
