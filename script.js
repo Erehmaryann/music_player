@@ -119,11 +119,15 @@ const setVolume = () => {
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
+// to move to the next song
 sound.addEventListener("ended", nextSong);
+// to update the progress bar
 sound.addEventListener("timeupdate", updateProgressBar);
+// to set the progress bar on click
 progressContainer.addEventListener("click", setProgressBar);
+// to set the volume on click
 volume_slider.addEventListener("change", setVolume);
-// Play or Pause keyboard event
+// Play, loop or Pause keyboard event
 document.addEventListener("keydown", (e) => {
   if (e.keyCode === 32) {
     isPlaying ? pauseSong() : playSong();
