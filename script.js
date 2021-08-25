@@ -34,6 +34,11 @@ const pauseSong = () => {
 
 // Play or Pause Event Listener
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
+document.addEventListener("keydown", (e) => {
+  if (e.keyCode === 32) {
+    isPlaying ? pauseSong() : playSong();
+  }
+});
 
 // Current Song
 let songIndex = 0;
