@@ -109,5 +109,6 @@ const setProgressBar = (e) => {
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
+sound.addEventListener("ended", nextSong);
 sound.addEventListener("timeupdate", updateProgressBar);
 progressContainer.addEventListener("click", setProgressBar);
