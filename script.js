@@ -106,6 +106,16 @@ const loadSong = (song) => {
 // On load -Select First Song
 loadSong(songs[songIndex]);
 
+// Previous Song
+const prevSong = () => {
+  songIndex--;
+  if (songIndex < 0) {
+    songIndex = songs.length - 1;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+};
+
 // Next Song
 const nextSong = () => {
   songIndex++;
