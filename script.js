@@ -4,6 +4,7 @@ const artist = document.querySelector("#artist");
 const sound = document.querySelector("audio");
 const progressContainer = document.querySelector("#progress-container");
 const progress = document.querySelector("#progress");
+const currentTime = document.querySelector("#current-time");
 const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
 const playBtn = document.querySelector("#play");
