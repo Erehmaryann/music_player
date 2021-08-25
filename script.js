@@ -3,6 +3,7 @@ const title = document.querySelector("#title");
 const artist = document.querySelector("#artist");
 const sound = document.querySelector("audio");
 const progressContainer = document.querySelector("#progress-container");
+const progress = document.querySelector("#progress");
 const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
 const playBtn = document.querySelector("#play");
