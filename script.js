@@ -64,6 +64,13 @@ const nextSong = () => {
   playSong();
 };
 
+// Update Progress Bar and Time
+const updateProgressBar = (e) => {
+  if (isPlaying) {
+    const { duration, currentTime } = e.srcElement;
+  }
+};
+
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
