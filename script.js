@@ -75,13 +75,26 @@ const updateProgressBar = (e) => {
     progress.style.width = `${progressPercent}%`;
     // Calculate display for duration
     const minutes = Math.floor(duration / 60);
-    const seconds = Math.floor(duration % 60);
+    let seconds = Math.floor(duration % 60);
+    // If seconds are less than 10, add a zero
     if (seconds < 10) {
       seconds = `0${seconds}`;
     }
-    durationEl.textContent = `${minutes}:${seconds}`;
-    // Update current time
-    currentTimeEl.textContent = `${currentTime}`;
+    // Delay switching duration to avoid flicker and NaN
+    if (seconds) {
+      durationEl.textContent = `${minutes}:${seconds}`;
+    }
+    // Calculate display for current time
+    const minutes2 = Math.floor(currentTime / 60);
+    let seconds2 = Math.floor(currentTime % 60);
+    // add leading zero if seconds < 10
+    if (seconds2 < 10) {
+      seconds2 = `0${seconds2}`;
+    }
+    // Delay switching current time to avoid flicker and NaN
+    if (seconds2) {
+      currentTimeEl.textContent = `${minutes2}:${seconds2}`;
+    }
   }
 };
 
