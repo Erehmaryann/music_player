@@ -34,11 +34,6 @@ const pauseSong = () => {
 
 // Play or Pause Event Listener
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
-document.addEventListener("keydown", (e) => {
-  if (e.keyCode === 32) {
-    isPlaying ? pauseSong() : playSong();
-  }
-});
 
 // Current Song
 let songIndex = 0;
@@ -128,3 +123,13 @@ sound.addEventListener("ended", nextSong);
 sound.addEventListener("timeupdate", updateProgressBar);
 progressContainer.addEventListener("click", setProgressBar);
 volume_slider.addEventListener("change", setVolume);
+// Play or Pause keyboard event
+document.addEventListener("keydown", (e) => {
+  if (e.keyCode === 32) {
+    isPlaying ? pauseSong() : playSong();
+  } else if (e.keyCode === 39) {
+    nextSong();
+  } else if (e.keyCode === 37) {
+    prevSong();
+  }
+});
