@@ -1,3 +1,5 @@
+// Select all the elements in the HTML page
+// and assign them to a variable
 const image = document.querySelector("img");
 const title = document.querySelector("#title");
 const artist = document.querySelector("#artist");
@@ -9,6 +11,7 @@ const durationEl = document.querySelector("#duration");
 const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
 const playBtn = document.querySelector("#play");
+const volume_slider = document.querySelector(".volume_slider");
 
 // Check if song is playing
 let isPlaying = false;
@@ -106,9 +109,17 @@ const setProgressBar = (e) => {
   sound.currentTime = (clickX / width) * duration;
 };
 
+//Set volume
+const setVolume = () => {
+  // Set the volume according to the
+  // percentage of the volume slider set
+  sound.volume = volume_slider.value / 100;
+};
+
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
 sound.addEventListener("ended", nextSong);
 sound.addEventListener("timeupdate", updateProgressBar);
 progressContainer.addEventListener("click", setProgressBar);
+volume_slider.addEventListener("change", setVolume);
