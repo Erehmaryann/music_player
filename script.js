@@ -106,6 +106,16 @@ const loadSong = (song) => {
 // On load -Select First Song
 loadSong(songs[songIndex]);
 
+// Next Song
+const nextSong = () => {
+  songIndex++;
+  if (songIndex > songs.length - 1) {
+    songIndex = 0;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+};
+
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
