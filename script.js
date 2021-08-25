@@ -98,7 +98,15 @@ const updateProgressBar = (e) => {
   }
 };
 
+// Set progress bar and time
+const setProgressBar = (e) => {
+  if (isPlaying) {
+    const { duration, currentTime } = e.srcElement;
+  }
+};
+
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
 sound.addEventListener("timeupdate", updateProgressBar);
+progressContainer.addEventListener("click", setProgressBar);
