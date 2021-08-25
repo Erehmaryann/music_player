@@ -100,9 +100,10 @@ const updateProgressBar = (e) => {
 
 // Set progress bar and time
 const setProgressBar = (e) => {
-  if (isPlaying) {
-    const { duration, currentTime } = e.srcElement;
-  }
+  const width = e.srcElement.clientWidth;
+  const clickX = e.offsetX;
+  const { duration } = sound || {};
+  sound.currentTime = (clickX / width) * duration;
 };
 
 // Event Listeners
