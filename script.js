@@ -79,6 +79,8 @@ const updateProgressBar = (e) => {
     durationEl.textContent = `${minutes}:${seconds
       .toString()
       .padStart(2, "0")}`;
+    // Update current time
+    currentTimeEl.textContent = `${currentTime.toString().padStart(2, "0")}`;
   }
 };
 
