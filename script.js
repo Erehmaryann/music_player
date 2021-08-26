@@ -13,6 +13,8 @@ const nextBtn = document.querySelector("#next");
 const playBtn = document.querySelector("#play");
 const volume_slider = document.querySelector(".volume_slider");
 
+const playlistIcon = document.querySelector("playlist-icon");
+
 // Check if song is playing
 let isPlaying = false;
 
