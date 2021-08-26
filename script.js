@@ -19,6 +19,9 @@ const musicList = document.querySelector(".list-border");
 // Check if song is playing
 let isPlaying = false;
 
+// Current Song
+let songIndex = 0;
+
 // Play
 const playSong = () => {
   isPlaying = true;
@@ -37,9 +40,6 @@ const pauseSong = () => {
 
 // Play or Pause Event Listener
 playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
-
-// Current Song
-let songIndex = 0;
 
 // Update DOM
 const loadSong = (song) => {
@@ -118,6 +118,11 @@ const setVolume = () => {
   // percentage of the volume slider set
   sound.volume = volume_slider.value / 100;
 };
+
+// loop through songs array
+songs.map((song) => {
+  console.log(song);
+});
 
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
