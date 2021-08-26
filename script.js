@@ -1,6 +1,6 @@
 // Select all the elements in the HTML page
 // and assign them to a variable
-const image = document.querySelector("img");
+const image = document.querySelector(".img-container img");
 const title = document.querySelector("#title");
 const artist = document.querySelector("#artist");
 const sound = document.querySelector("audio");
@@ -15,6 +15,9 @@ const volume_slider = document.querySelector(".volume_slider");
 
 const playlistIcon = document.querySelector(".playlist-icon");
 const musicList = document.querySelector(".list-border");
+const playlistImage = document.querySelector("#list-img");
+const playlistTitle = document.querySelector("#first-paragraph");
+const playlistDesc = document.querySelector("#second-paragraph");
 
 // Check if song is playing
 let isPlaying = false;
