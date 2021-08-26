@@ -147,6 +147,10 @@ h3 {
   opacity: 1;
 }
 
+.volume_slider {
+  width: 40%;
+}
+
 .volume-container {
   width: 70%;
 }
