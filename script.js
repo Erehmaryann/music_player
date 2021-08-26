@@ -142,6 +142,8 @@ const displayPlaylist = () => {
       songIndex = index;
       loadSong(songs[songIndex]);
       playSong();
+      // close playlist
+      musicList.style.display = "none";
     });
     musicList.appendChild(listItem);
   });
