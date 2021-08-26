@@ -156,28 +156,20 @@ h3 {
 }
 
 /* Music list */
-.list-column {
-  flex: 35%;
-  /* margin-top: 2rem; */
-  background-color: #e7e7e7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .list-border {
   border: 2px solid #cec9c9;
   border-radius: 10px;
-  box-shadow: 1px 1px 2px var(--main-txt-color);
+  box-shadow: 1px 1px 2px rgba(212, 208, 208, 0.829);
   max-height: 92%;
   overflow: auto;
+  background-color: #e7e7e7;
+  width: 400px;
 }
 
 .list-column .list-items {
   text-transform: capitalize;
   font-weight: strong;
-  width: 400px;
+  width: 100%;
   color: var(--main-txt-color);
   border-bottom: 1px solid #cec9c9;
   display: flex;
@@ -188,6 +180,10 @@ h3 {
 
 .list-items img {
   width: 20px;
+}
+
+.list-items p {
+  width: 95%;
 }
 
 /* Media Query: iPhone (Vertical) */
