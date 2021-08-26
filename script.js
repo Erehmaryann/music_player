@@ -16,8 +16,8 @@ const volume_slider = document.querySelector(".volume_slider");
 const playlistIcon = document.querySelector(".playlist-icon");
 const musicList = document.querySelector(".list-border");
 const playlistImage = document.querySelector("#list-img");
-const playlistTitle = document.querySelector("#first-paragraph");
-const playlistDesc = document.querySelector("#second-paragraph");
+const playlistTitle = document.querySelector("#list-item-title");
+const playlistDesc = document.querySelector("#list-item-artist");
 
 // Check if song is playing
 let isPlaying = false;
@@ -122,10 +122,30 @@ const setVolume = () => {
   sound.volume = volume_slider.value / 100;
 };
 
-// loop through songs array
-songs.map((song) => {
-  console.log(song);
-});
+// loop through songs array to display playlist
+const displayPlaylist = () => {
+  musicList.innerHTML = "";
+  songs.forEach((song, index) => {
+    const listItem = document.createElement("div");
+    listItem.classList.add("list-items");
+    listItem.setAttribute("data-index", index);
+    listItem.innerHTML = `
+      <div class="list-item-image">
+        <img src="${song.image}" alt="${song.name}">
+      </div>
+      <div class="list-item-info">
+        <h4 class="list-item-title">${song.name}</h4>
+        <p class="list-item-artist">${song.artist}</p>
+      </div>
+    `;
+    listItem.addEventListener("click", () => {
+      songIndex = index;
+      loadSong(songs[songIndex]);
+      playSong();
+    });
+    musicList.appendChild(listItem);
+  });
+};
 
 // Event Listeners
 prevBtn.addEventListener("click", prevSong);
@@ -153,6 +173,7 @@ playlistIcon.addEventListener("click", () => {
   // show and hide musiclist
   if (musicList.style.display === "none") {
     musicList.style.display = "block";
+    displayPlaylist();
   } else {
     musicList.style.display = "none";
   }
