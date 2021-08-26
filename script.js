@@ -13,7 +13,8 @@ const nextBtn = document.querySelector("#next");
 const playBtn = document.querySelector("#play");
 const volume_slider = document.querySelector(".volume_slider");
 
-const playlistIcon = document.querySelector("playlist-icon");
+const playlistIcon = document.querySelector(".playlist-icon");
+const musicList = document.querySelector(".list-border");
 
 // Check if song is playing
 let isPlaying = false;
@@ -137,5 +138,14 @@ document.addEventListener("keydown", (e) => {
     nextSong();
   } else if (e.keyCode === 37) {
     prevSong();
+  }
+});
+
+playlistIcon.addEventListener("click", () => {
+  // show and hide musiclist
+  if (musicList.style.display === "none") {
+    musicList.style.display = "block";
+  } else {
+    musicList.style.display = "none";
   }
 });
