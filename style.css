@@ -158,15 +158,26 @@ h3 {
 
 /* Music list */
 .list-border {
-  border: 2px solid #cec9c9;
+  border: 1px solid #cec9c9;
   border-radius: 10px;
   box-shadow: 1px 0px 0px 1px rgba(212, 208, 208, 0.829);
   max-height: 100px;
   overflow-y: auto;
   background-color: #e7e7e7;
-  width: 400px;
+  width: 350px;
+  margin: 0 auto;
   position: absolute;
-  bottom: 5%;
+  bottom: 70%;
+}
+
+.list-border::-webkit-scrollbar {
+  width: 5px;
+  height: 6em;
+}
+
+.list-border::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 20px;
 }
 
 .list-items {
