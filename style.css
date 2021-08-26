@@ -160,30 +160,23 @@ h3 {
   border: 2px solid #cec9c9;
   border-radius: 10px;
   box-shadow: 1px 1px 2px rgba(212, 208, 208, 0.829);
-  max-height: 92%;
-  overflow: auto;
+  max-height: 100px;
+  overflow-y: auto;
   background-color: #e7e7e7;
   width: 400px;
 }
 
-.list-column .list-items {
-  text-transform: capitalize;
-  font-weight: strong;
-  width: 100%;
-  color: var(--main-txt-color);
+.list-items {
   border-bottom: 1px solid #cec9c9;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
   align-items: center;
 }
 
 .list-items img {
   width: 20px;
-}
-
-.list-items p {
-  width: 95%;
 }
 
 /* Media Query: iPhone (Vertical) */
