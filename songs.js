@@ -60,4 +60,10 @@ const songs = [
     image: "img/like-you.jpg",
     audio: "music/like-you.mp3",
   },
+  {
+    name: "Jesus Can",
+    artist: "Austin French",
+    image: "img/jesus-can.jpg",
+    audio: "music/Jesus-Can.mp3",
+  },
 ];
