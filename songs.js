@@ -70,12 +70,12 @@ const songs = [
     name: "Visiting Hours",
     artist: "Ed-Sheeran",
     image: "img/Ed-Sheeran-Visiting-Hours.jpg",
-    audio: "music/Ed_Sheeran-Visiting_Hours.mp3"
+    audio: "music/visiting_hours.mp3"
   },
   {
     name: "Scars to Your Beautiful",
     artist: "Alessia Cara",
     image: "img/Alessia-Cara-Scars-To-Your-Beautiful.jpg",
-    audio: "music/Alessia-Cara-Scars-To-Your-Beautiful.mp3"
+    audio: "music/scars-to-your-beautiful.mp3"
   }
 ];
