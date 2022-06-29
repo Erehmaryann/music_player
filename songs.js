@@ -70,12 +70,18 @@ const songs = [
     name: "Visiting Hours",
     artist: "Ed-Sheeran",
     image: "img/Ed-Sheeran-Visiting-Hours.jpg",
-    audio: "music/visiting_hours.mp3"
+    audio: "music/visiting-hours.mp3"
   },
   {
     name: "Scars to Your Beautiful",
     artist: "Alessia Cara",
     image: "img/Alessia-Cara-Scars-To-Your-Beautiful.jpg",
     audio: "music/scars-to-your-beautiful.mp3"
+  },
+  {
+    name: "Someone You Loved",
+    artist: "Lewis Capaldi",
+    image: "img/someone-you-loved.webp",
+    audio: "music/someone-you-loved.mp3"
   }
 ];
